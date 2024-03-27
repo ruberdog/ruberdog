@@ -1,33 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
     <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0" />
-    <title>Ruber.Dog</title>
-    <meta name="Description" content="Ruber.Dog 🐕💨">
-    <link rel="stylesheet" href="basic.css" type="text/css">
+    <meta name="Description" content="Ruber, the Dog 🐕💨">
+    <title>Ruber</title>
     <style>
-      main,footer {
-        margin: 0 auto;
-        width: 60%;
-        text-align: left;
-        padding: 0 20px;
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
       }
-      @media (max-width: 640px) {
-        body { font-size: 18px }
-        main,footer { width: 98% }
-        section,article { flex:none; width:100%; margin-left: 0; }
+
+      html {
+        text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -webkit-text-size-adjust: none;
+      }
+
+      body {
+        min-height: 100vh;
+
+        font: clamp(1.125rem, 1.05rem + 0.25vw, 1.25rem)/1.65 ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        text-rendering: optimizeSpeed;
+        -webkit-font-smoothing: antialiased;
+
+        padding: 10vh clamp(0.825rem, 10vw, 10rem);
+        background-color: #fafaf9;
+        color: #292524;
+      }
+
+      main {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 6.4rem;
+        align-items: flex-start;
+        width: min(100%, 70ch);
+      }
+
+      h1 {
+        font-weight: bold;
+        font-style: italic;
+        text-wrap: balance;
+      }
+
+      img {
+        display: block;
+        border: 0;
+      }
+
+      p {
+        margin-top: 1em;
+        text-wrap: pretty;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>Ruber.Dog</h1>
-      <img src="ruber.svg" />
-      <p><a href="mailto:bark@ruber.dog">bark@ruber.dog</a></p>
+      <h1>I'm Ruber, the dog!</h1>
+      <img src="ruber.svg" alt="Ruber, the dog" />
+      <p>You can bark at me: <a href="mailto:bark@ruber.dog">bark@ruber.dog</a></p>
     </main>
-    <footer>
-      <p>Made with ❤️ in Berlin and Warsaw 2020</p>
-    </footer>
   </body>
 </html>
